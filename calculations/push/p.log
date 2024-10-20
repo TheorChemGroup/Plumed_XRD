@@ -1,0 +1,32 @@
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.7.4 (git: Unknown) compiled on Nov 21 2023 at 22:18:25
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /s/ls4/users/igorstan/plumed-2.7.4/plumed_installed/lib/plumed
+PLUMED: For installed feature, see /s/ls4/users/igorstan/plumed-2.7.4/plumed_installed/lib/plumed/src/config/config.txt
+PLUMED: Molecular dynamics engine: LAMMPS
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 48
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 160
+PLUMED: File suffix: 
+PLUMED: FILE: plumed.dat
+PLUMED: Action DIFF
+PLUMED:   with label m
+PLUMED: Pushing mode is active 
+PLUMED: Action PRINT
+PLUMED:   with label @1
+PLUMED:   with stride 1
+PLUMED:   with arguments m
+PLUMED:   on file COLVAR
+PLUMED:   with format  %f
+PLUMED: END FILE: plumed.dat
+PLUMED: Timestep: 0.002000
+PLUMED: KbT has not been set by the MD engine
+PLUMED: It should be set by hand where needed
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup

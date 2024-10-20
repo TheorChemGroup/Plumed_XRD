@@ -1,0 +1,39 @@
+clear
+units            real
+atom_style       full
+dimension        3
+boundary         p p p
+
+special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 0.8333333333
+pair_style lj/cut/coul/long 8.0
+
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+improper_style cvff
+
+read_data 	 monoclinic.data
+
+kspace_style	 pppm 1.0e-4
+
+neighbor         2.0 bin
+neigh_modify     delay 10 every 1 check yes
+
+timestep      2
+velocity      all create 273 21430 dist gaussian mom no rot no
+
+
+fix 	         2 all plumed plumedfile plumed.dat outfile p.log
+
+thermo_style     custom time temp pe ke press vol density
+thermo           10
+
+fix               1 all nvt temp 273 273 20.0
+
+dump 1 all custom 25 para.lammpstrj id mol type element x y z ix iy iz
+dump_modify 1 element O C N C C H C H C O H C H C H H C H H H
+
+run           500000
+
+
+
