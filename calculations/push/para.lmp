@@ -33,7 +33,7 @@ fix               1 all nvt temp 273 273 20.0
 dump 1 all custom 25 para.lammpstrj id mol type element x y z ix iy iz
 dump_modify 1 element O C N C C H C H C O H C H C H H C H H H
 
-run           500000
+run           6400
 
 
 
