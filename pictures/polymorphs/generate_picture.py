@@ -84,8 +84,8 @@ boxes["D"].y0 = boxes["C"].y0
 boxes["D"].y1 = boxes["C"].y1
 
 
-rectA = drawEnclosingRect(boxes["A"].x0-0.07, boxes["B"].y0-0.08, boxes["D"].x1+0.01, boxes["A"].y1, color=border_color)
-rectC = drawEnclosingRect(boxes["C"].x0-0.07, boxes["D"].y0-0.08, boxes["D"].x1+0.01, boxes["C"].y1, color=border_color)
+rectA = drawEnclosingRect(boxes["A"].x0-0.07, boxes["B"].y0-0.08, boxes["D"].x1+0.01, boxes["A"].y1, color=border_color, linewidth=border_width)
+rectC = drawEnclosingRect(boxes["C"].x0-0.07, boxes["D"].y0-0.08, boxes["D"].x1+0.01, boxes["C"].y1, color=border_color, linewidth=border_width)
 
 for axis in axs:
     axs[axis].set_position(boxes[axis])

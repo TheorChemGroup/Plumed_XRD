@@ -133,8 +133,8 @@ axs["E"].set_position(boxes["E"])
 axs["F"].set_position(boxes["F"])
 
 
-rectA = drawEnclosingRect(boxes["A"].x0, boxes["A"].y0-0.015, boxes["B"].x1, boxes["A"].y1-0.0115, color=border_color)
-rectF = drawEnclosingRect(boxes["E"].x0, boxes["E"].y0-0.015, boxes["F"].x1, boxes["E"].y1-0.0115, color=border_color)
+rectA = drawEnclosingRect(boxes["A"].x0, boxes["A"].y0-0.015, boxes["B"].x1, boxes["A"].y1-0.0115, color=border_color, linewidth=border_width)
+rectF = drawEnclosingRect(boxes["E"].x0, boxes["E"].y0-0.015, boxes["F"].x1, boxes["E"].y1-0.0115, color=border_color, linewidth=border_width)
 rectAbox = rectA.get_bbox()
 rectFbox = rectF.get_bbox()
 axs["A"].annotate("Initial structure", xy=(0.483, 1.00 + shift), xycoords="figure fraction", fontsize=18, ha="center", va="center", weight="bold")
