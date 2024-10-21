@@ -26,11 +26,12 @@
   ## Calculations, data analysis and pictures
   `calculations` folder in this repository contains the examples of pulling and pushing scenarios application. 
   
-  There are 4 input files you will need:
+  There are 4(5) input files you will need:
   - `plumed.dat`, standard PLUMED input with our keywords
   - `para.lmp`, standard LAMMPS input
   - `*.data`, a file with a configured force-field
   - `names.txt`, a file with atomic numbers of atoms listed in the para.lmp
+  - `pattern.dat`, a file with a reference diffraction pattern (only for pull scenario)
   
   To run the calculation you need to run LAMMPS and use `para.lmp` as an input file:
   
